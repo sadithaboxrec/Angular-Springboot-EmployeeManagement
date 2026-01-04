@@ -36,7 +36,7 @@ public class EmployeeServiceImpl implements EmployeeService {
             employeeobj.setEmployeeName(employee.getEmployeeName());
             employeeobj.setEmployeeSalary(employee.getEmployeeSalary());
         }
-        return employeeRepository.save(employee);
+        return employeeRepository.save(employeeobj);
     }
 
     @Override
